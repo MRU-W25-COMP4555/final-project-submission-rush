@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ces062n4o5jm2"]
+
+[ext_resource type="Texture2D" uid="uid://0u2onj4rpf0h" path="res://assets/NPC interaction.png" id="1_k3xp2"]
+
+[node name="NPC1" type="Node2D"]
+
+[node name="NpcInteraction" type="Sprite2D" parent="."]
+position = Vector2(15, -11)
+texture = ExtResource("1_k3xp2")

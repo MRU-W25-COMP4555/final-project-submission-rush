@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://36cl53hw1yvc"]
+
+[ext_resource type="Script" path="res://scripts/world_boundary.gd" id="1_fu87a"]
+
+[node name="world_boundary" type="Area2D"]
+script = ExtResource("1_fu87a")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
